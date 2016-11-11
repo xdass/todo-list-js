@@ -1,0 +1,147 @@
+@font-face {
+    font-family: Roboto; /* Гарнитура шрифта */
+    src: url(Roboto.ttf); /* Путь к файлу со шрифтом */
+}
+
+body {
+  font-family: Roboto;
+  background: url('wood-003.png');
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 5px;
+  display: block;
+  width: 260px;
+}
+
+fieldset {
+  border-color: #9f6820;
+}
+
+.board {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 18px;
+}
+.taskForm {
+  align-self: flex-start;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 300px;
+  height: auto;
+  min-height: 20px;
+  border-radius: 5px;
+  background-color: #FFDBAA;
+}
+.task {
+  font-size: 14px;
+  position: relative;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px rgba(0,0,0,0.2);
+  margin: 10px 8px 10px 8px;
+  padding: 10px;
+  padding-bottom: 25px;
+}
+.task:hover {
+  background-color: #f5f5f5;
+}
+.taskTitle {
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+  border-bottom: 1px solid grey;
+}
+.taskDescription {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+/*.done {
+  text-decoration: line-through;
+  color: #dedede;
+}*/
+.task:hover .deleteBtn {
+  display:inline;
+}
+.deleteBtn {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 23px;
+  height: 23px;
+  background-image: url(close.png);
+  background-repeat: no-repeat;
+}
+.backward {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 15px solid rgba(208, 195, 176, 0.45);
+  transform: rotate(-90deg);
+}
+.backward:hover {
+  border-bottom: 15px solid #5b411e;
+}
+.forward {
+  position: absolute;
+  right: 5px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 15px solid rgba(208, 195, 176, 0.45);
+  transform: rotate(90deg);
+}
+.forward:hover {
+  border-bottom: 15px solid #5b411e;
+}
+.up {
+  position: absolute;
+  right: 150px;
+  width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 15px solid rgba(208, 195, 176, 0.45);
+}
+.up:hover {
+  border-bottom: 15px solid #5b411e;
+}
+.down {
+  position: absolute;
+  right: 115px;
+  width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 15px solid rgba(208, 195, 176, 0.45);
+  transform: rotate(180deg);
+}
+.down:hover {
+  border-bottom: 15px solid #5b411e;
+}
+.addTask {
+  width: 315px;
+}
+.addTaskBtn {
+  border: none;
+  background-color: #5b411e;
+  color: #ffffff;
+  padding: 5px 52px 5px 52px;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.addTaskBtn:hover {
+  background-color: #7b603b;
+}
