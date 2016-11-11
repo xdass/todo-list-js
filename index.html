@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Document</title>
+</head>
+<body>
+<div class="board">
+  <div id="todo" class="taskForm todo">
+    <!-- <div class="title">На выполнение</div> -->
+  </div>
+  <div id="inprogress" class="taskForm inprogress">
+    <!-- <div class="title">Выполняются</div> -->
+  </div>
+  <div id="done" class="taskForm done">
+    <!-- <div class="title">Завершены</div> -->
+  </div>
+  <form class="addTask">
+    <fieldset>
+      <legend>Добавить задачу</legend>
+      <input type="input" name="name" placeholder="Имя задачи" id="name">
+      <input type="input" name="description" placeholder="Описание">
+      <button type="button" name="button" class="addTaskBtn">Добавить</button>
+    </fieldset>
+  </form>
+</div>
+<script src="Sortable.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
